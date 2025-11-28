@@ -46,43 +46,43 @@ export default function CoinDetailPage() {
   const isPositive = coin.change24h >= 0;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+      <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground px-2 sm:px-0">
         <Link href="/" className="hover:text-foreground transition-colors">
           Dashboard
         </Link>
-        <ChevronRight className="w-4 h-4" />
-        <span className="text-foreground font-medium">
+        <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
+        <span className="text-foreground font-medium truncate">
           {coin.name} ({coin.symbol})
         </span>
       </div>
 
       {/* Coin Header */}
       <Card className="card-crypto border-0">
-        <CardContent className="pt-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                <Avatar className="w-14 h-14">
+        <CardContent className="pt-4 sm:pt-6">
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                <Avatar className="w-10 h-10 sm:w-14 sm:h-14">
                   <AvatarImage src={coin.logo} alt={coin.name} />
-                  <AvatarFallback className="bg-primary/20 text-primary font-bold text-xl">
+                  <AvatarFallback className="bg-primary/20 text-primary font-bold text-lg sm:text-xl">
                     {coin.symbol.slice(0, 2)}
                   </AvatarFallback>
                 </Avatar>
               </div>
 
               <div>
-                <h1 className="text-3xl font-bold">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold">
                   {coin.name} ({coin.symbol})
                 </h1>
-                <div className="flex items-center gap-3 mt-2">
-                  <span className="text-2xl font-bold text-foreground">
+                <div className="flex items-center gap-2 sm:gap-3 mt-1 sm:mt-2">
+                  <span className="text-lg sm:text-xl lg:text-2xl font-bold text-foreground">
                     Sentiment: {coin.sentimentScore}
                   </span>
                   <Badge
                     variant={isPositive ? "success" : "destructive"}
-                    className="flex items-center gap-1"
+                    className="flex items-center gap-1 text-xs sm:text-sm"
                   >
                     {isPositive ? (
                       <TrendingUp className="w-3 h-3" />
@@ -108,8 +108,8 @@ export default function CoinDetailPage() {
 
       {/* Key Metrics */}
       <div>
-        <h2 className="text-xl font-bold mb-4">Key Metrics</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 px-2 sm:px-0">Key Metrics</h2>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {mockMetrics.map((metric) => (
             <MetricCard key={metric.title} {...metric} />
           ))}
@@ -118,7 +118,7 @@ export default function CoinDetailPage() {
 
       {/* Related News */}
       <div>
-        <h2 className="text-xl font-bold mb-4">
+        <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 px-2 sm:px-0">
           Related News for {coin.symbol}
         </h2>
         <NewsSection news={mockNews} />

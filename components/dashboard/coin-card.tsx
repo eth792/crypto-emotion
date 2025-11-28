@@ -29,30 +29,30 @@ export function CoinCard({
   return (
     <Link href={`/coin/${symbol}`}>
       <Card className="card-crypto border-0 hover:scale-[1.02] cursor-pointer">
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-3 sm:mb-4">
           {/* Left: Icon + Name */}
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-              <Avatar className="w-8 h-8">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <Avatar className="w-6 h-6 sm:w-8 sm:h-8">
                 <AvatarImage src={logo} alt={name} />
-                <AvatarFallback className="bg-primary/20 text-primary text-xs font-bold">
+                <AvatarFallback className="bg-primary/20 text-primary text-[10px] sm:text-xs font-bold">
                   {symbol.slice(0, 2)}
                 </AvatarFallback>
               </Avatar>
             </div>
 
             <div>
-              <h3 className="font-semibold text-foreground">{symbol}</h3>
-              <p className="text-xs text-muted-foreground">{name}</p>
+              <h3 className="font-semibold text-sm sm:text-base text-foreground">{symbol}</h3>
+              <p className="text-[10px] sm:text-xs text-muted-foreground">{name}</p>
             </div>
           </div>
 
           {/* Right: Score */}
           <div className="text-right">
-            <div className="flex items-center gap-2 justify-end mb-1">
+            <div className="flex items-center gap-1 sm:gap-2 justify-end mb-1">
               <span
                 className={cn(
-                  "font-bold text-lg",
+                  "font-bold text-base sm:text-lg",
                   isPositive ? "text-sentiment-greed" : "text-sentiment-fear"
                 )}
               >
@@ -63,16 +63,16 @@ export function CoinCard({
         </div>
 
         {/* Change and Sparkline */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mb-2 sm:mb-3">
           <div className="flex items-center gap-1">
             {isPositive ? (
-              <TrendingUp className="w-4 h-4 text-sentiment-greed" />
+              <TrendingUp className="w-3 h-3 sm:w-4 sm:h-4 text-sentiment-greed" />
             ) : (
-              <TrendingDown className="w-4 h-4 text-sentiment-fear" />
+              <TrendingDown className="w-3 h-3 sm:w-4 sm:h-4 text-sentiment-fear" />
             )}
             <span
               className={cn(
-                "text-sm font-medium",
+                "text-xs sm:text-sm font-medium",
                 isPositive ? "text-sentiment-greed" : "text-sentiment-fear"
               )}
             >
@@ -82,7 +82,7 @@ export function CoinCard({
           </div>
         </div>
 
-        <div className="mt-3">
+        <div className="mt-2 sm:mt-3">
           <Sparkline
             data={sparklineData}
             color={isPositive ? "#10B981" : "#EF4444"}

@@ -141,15 +141,22 @@ export function SentimentAreaChart({
                 <stop offset="95%" stopColor="#8B4513" stopOpacity={0.1} />
               </linearGradient>
             </defs>
-            <CartesianGrid strokeDasharray="3 3" stroke="#333" />
-            <XAxis dataKey="time" stroke="#666" style={{ fontSize: "10px" }} />
-            <YAxis stroke="#666" style={{ fontSize: "10px" }} />
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" className="opacity-50" />
+            <XAxis
+              dataKey="time"
+              stroke="hsl(var(--muted-foreground))"
+              style={{ fontSize: "10px" }}
+            />
+            <YAxis
+              stroke="hsl(var(--muted-foreground))"
+              style={{ fontSize: "10px" }}
+            />
             <Tooltip
               contentStyle={{
-                backgroundColor: "#242424",
-                border: "1px solid #333",
+                backgroundColor: "hsl(var(--card))",
+                border: "1px solid hsl(var(--border))",
                 borderRadius: "8px",
-                color: "#fff",
+                color: "hsl(var(--foreground))",
                 fontSize: "12px",
               }}
             />

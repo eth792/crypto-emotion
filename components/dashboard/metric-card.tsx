@@ -22,12 +22,12 @@ export function MetricCard({
 
   return (
     <Card className="card-crypto border-0">
-      <CardHeader className="pb-2 sm:pb-3 px-3 sm:px-6 pt-3 sm:pt-6">
+      <CardHeader className="pb-2 sm:pb-3">
         <CardTitle className="text-xs sm:text-sm font-medium text-muted-foreground">
           {title}
         </CardTitle>
       </CardHeader>
-      <CardContent className="px-3 sm:px-6 pb-3 sm:pb-6">
+      <CardContent>
         <div className="space-y-1 sm:space-y-2">
           <div className="flex items-baseline gap-1 sm:gap-2 flex-wrap">
             <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground">{value}</span>
