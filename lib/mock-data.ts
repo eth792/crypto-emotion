@@ -21,7 +21,7 @@ export const mockCoins: Coin[] = [
     logo: "https://cryptologos.cc/logos/bitcoin-btc-logo.png",
     sentimentScore: 72,
     change24h: 8.5,
-    sparklineData: [65, 67, 70, 68, 71, 72],
+    sparklineData: [64, 66, 65, 68, 70, 69, 72], // 7 days of price movement
   },
   {
     id: "ethereum",
@@ -30,7 +30,7 @@ export const mockCoins: Coin[] = [
     logo: "https://cryptologos.cc/logos/ethereum-eth-logo.png",
     sentimentScore: 68,
     change24h: 5.2,
-    sparklineData: [62, 64, 66, 65, 67, 68],
+    sparklineData: [63, 64, 65, 64, 66, 67, 68], // Steady upward trend
   },
   {
     id: "binancecoin",
@@ -39,7 +39,7 @@ export const mockCoins: Coin[] = [
     logo: "https://cryptologos.cc/logos/bnb-bnb-logo.png",
     sentimentScore: 65,
     change24h: 3.8,
-    sparklineData: [60, 62, 63, 64, 64, 65],
+    sparklineData: [61, 62, 62, 63, 64, 64, 65], // Gradual increase
   },
   {
     id: "solana",
@@ -48,7 +48,7 @@ export const mockCoins: Coin[] = [
     logo: "https://cryptologos.cc/logos/solana-sol-logo.png",
     sentimentScore: 75,
     change24h: 12.4,
-    sparklineData: [68, 70, 72, 71, 74, 75],
+    sparklineData: [65, 68, 71, 70, 73, 74, 75], // Strong upward momentum
   },
   {
     id: "cardano",
@@ -57,7 +57,7 @@ export const mockCoins: Coin[] = [
     logo: "https://cryptologos.cc/logos/cardano-ada-logo.png",
     sentimentScore: 58,
     change24h: -2.1,
-    sparklineData: [62, 61, 60, 59, 58, 58],
+    sparklineData: [60, 61, 60, 59, 59, 58, 58], // Slight downward trend
   },
   {
     id: "ripple",
@@ -66,7 +66,7 @@ export const mockCoins: Coin[] = [
     logo: "https://cryptologos.cc/logos/xrp-xrp-logo.png",
     sentimentScore: 62,
     change24h: 1.5,
-    sparklineData: [60, 61, 61, 62, 62, 62],
+    sparklineData: [61, 61, 60, 61, 62, 62, 62], // Relatively flat
   },
 ];
 

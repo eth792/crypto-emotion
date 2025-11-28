@@ -227,19 +227,38 @@ function calculateSentimentFromChange(change24h: number): number {
 }
 
 function generateSparkline(change24h: number): number[] {
-  // Generate realistic 7-day sparkline based on 24h change
+  // Generate realistic 7-day sparkline with market-like volatility
   const points = 7; // 7 days
   const data: number[] = [];
-  const endValue = 50; // Current normalized value
-  const startValue = endValue - change24h; // 7 days ago value
+  const baseValue = 50; // Normalized base value
 
+  // Calculate starting value based on 7-day change
+  const startValue = baseValue - change24h;
+
+  // Generate more realistic price movements
   for (let i = 0; i < points; i++) {
-    // Linear interpolation with random variation
     const progress = i / (points - 1);
-    const interpolated = startValue + (endValue - startValue) * progress;
-    const randomVariation = (Math.random() - 0.5) * Math.abs(change24h) * 0.3;
-    const value = interpolated + randomVariation;
-    data.push(Math.max(0, Math.min(100, value)));
+
+    // Main trend (linear interpolation)
+    const trendValue = startValue + (baseValue - startValue) * progress;
+
+    // Add realistic intraday volatility
+    // Day 1-2: Lower volatility
+    // Day 3-5: Higher volatility (mid-week)
+    // Day 6-7: Moderate volatility
+    const volatilityFactor = i < 2 ? 0.2 : i > 4 ? 0.25 : 0.35;
+    const randomWalk = (Math.random() - 0.5) * Math.abs(change24h) * volatilityFactor;
+
+    // Add occasional "news" spikes (10% chance each day)
+    const newsSpike = Math.random() > 0.9 ? (Math.random() - 0.5) * Math.abs(change24h) * 0.5 : 0;
+
+    // Combine all factors
+    let value = trendValue + randomWalk + newsSpike;
+
+    // Ensure values are within reasonable bounds
+    value = Math.max(0, Math.min(100, value));
+
+    data.push(Math.round(value * 100) / 100); // Round to 2 decimal places
   }
 
   return data;
