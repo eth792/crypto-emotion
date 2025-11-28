@@ -1,0 +1,5 @@
+{
+  "/api/fear-greed/route": "app/api/fear-greed/route.js",
+  "/coin/[symbol]/page": "app/coin/[symbol]/page.js",
+  "/page": "app/page.js"
+}

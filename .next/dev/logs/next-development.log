@@ -1,0 +1,76 @@
+[00:00:00.586] Server  LOG      ✓ Ready in 419ms
+[00:00:03.009] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:00:03.015] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:00:03.025] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:00:03.030] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:00:03.037] Server  ERROR   Failed to fetch global market data: TypeError: Failed to parse URL from /api/global
+[00:00:03.043] Server  ERROR   Failed to fetch global market data: TypeError: Failed to parse URL from /api/global
+[00:00:03.205] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:00:03.210] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:00:03.218] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:00:03.224] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:00:03.247] Server  ERROR   Failed to fetch global market data: TypeError: Failed to parse URL from /api/global
+[00:00:03.263] Server  ERROR   Failed to fetch global market data: TypeError: Failed to parse URL from /api/global
+[00:00:11.734] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:00:11.742] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:00:11.750] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:00:11.756] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:00:11.762] Server  ERROR   Failed to fetch global market data: TypeError: Failed to parse URL from /api/global
+[00:00:11.770] Server  ERROR   Failed to fetch global market data: TypeError: Failed to parse URL from /api/global
+[00:00:52.843] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:00:52.851] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:00:52.859] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:00:52.868] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:00:52.877] Server  ERROR   Failed to fetch global market data: TypeError: Failed to parse URL from /api/global
+[00:00:52.886] Server  ERROR   Failed to fetch global market data: TypeError: Failed to parse URL from /api/global
+[00:01:18.160] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:01:18.166] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:01:18.175] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:01:18.180] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:01:19.210] Server  ERROR   Failed to fetch global market data: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[00:01:27.758] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:01:27.769] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:01:27.780] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:01:27.784] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:01:27.787] Server  ERROR   Failed to fetch global market data: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[00:02:39.821] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:02:39.829] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:02:39.837] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:02:39.844] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:02:40.685] Server  ERROR   Failed to fetch global market data: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[00:03:33.057] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:03:33.064] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:03:33.073] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:03:33.079] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:03:47.737] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:03:47.747] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:03:47.762] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:03:47.769] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:05:27.483] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:05:27.492] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:05:27.506] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:05:27.511] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:06:19.746] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:06:19.757] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:06:19.773] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:06:19.780] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:06:41.741] Server  ERROR   Failed to fetch Fear & Greed Index: TypeError: Failed to parse URL from /api/fear-greed
+[00:06:41.750] Server  ERROR   Failed to fetch Fear & Greed data: TypeError: Failed to parse URL from /api/fear-greed
+[00:06:41.759] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:06:41.766] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:08:51.864] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:08:51.874] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:09:06.048] Server  LOG      ✓ Compiled in 47ms
+[00:09:15.932] Server  LOG      ✓ Compiled in 32ms
+[00:09:26.365] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:09:26.371] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:09:50.835] Server  ERROR   Failed to fetch ticker data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:09:50.845] Server  ERROR   Failed to fetch crypto data: TypeError: Failed to parse URL from /api/ticker?limit=6
+[00:10:10.101] Server  LOG      ✓ Compiled in 42ms
+[00:11:54.632] Server  LOG      ✓ Compiled in 31ms
+[00:12:04.796] Server  LOG      ✓ Compiled in 36ms
+[00:12:33.834] Server  LOG      ✓ Compiled in 102ms
+[00:15:41.430] Server  LOG      ✓ Compiled in 38ms
+[00:16:38.662] Server  LOG      ✓ Compiled in 49ms
+[00:17:05.120] Server  LOG      ✓ Compiled in 47ms
+[00:17:38.811] Server  LOG      ✓ Compiled in 49ms
